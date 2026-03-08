@@ -1,0 +1,34 @@
+.lesson {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-s);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--control-radius);
+}
+
+.draggable-lesson-icon {
+  cursor: move;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-m);
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.action-remove {
+  cursor: pointer;
+}

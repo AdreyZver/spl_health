@@ -1,0 +1,38 @@
+description = "Основной шаблон SPL Health"
+==
+<?php
+function onStart()
+{
+    $this->addCss('assets/css/variables.css');
+    $this->addCss('assets/css/fonts.css');
+    $this->addCss('assets/css/common.css');
+    $this->addCss('assets/css/main.css');
+    $this->addCss('assets/css/sections/header.css');
+    $this->addCss('assets/css/sections/footer.css');
+}
+?>
+==
+<!DOCTYPE html>
+<html>
+    {% partial 'site/head' %}
+    <body>
+
+        <!-- Header -->
+        {% partial 'site/header' %}
+
+        <!-- Content -->
+        <<!-- Content -->
+        <main>
+            {% page %}
+        </main>
+
+        <!-- Footer -->
+        {% partial 'site/footer' %}
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/js/libs/jquery.js'|theme }}"></script>
+        {% snowboard all %}
+        {% scripts %}
+
+    </body>
+</html>

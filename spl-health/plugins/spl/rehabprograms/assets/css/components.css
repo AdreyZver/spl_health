@@ -1,0 +1,40 @@
+.categories-component-wrapper {
+    display: grid;
+    grid-template-columns: 250px auto;
+    gap: 80px;
+}
+.categories__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+.programs__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.programs__list-item {
+    align-items: flex-start;
+    background: #D8EEFE;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.program__title {
+    font-size: 18px;
+}
+.program__name {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 24px;
+    color: #094067;
+}
+
+.program-wrapper {
+    max-width: 770px;
+}

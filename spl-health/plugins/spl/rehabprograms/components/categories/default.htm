@@ -1,0 +1,24 @@
+
+<!-- Categories -->
+<div class="categories-component-wrapper">
+    <div class="categories__list" id="categories-list">
+        {% for category in categories.getcategories %}
+            <a
+                href="/programs/{{category.id}}"
+                data-request="onGetProgramsTemplate"
+                data-request-data="categoryId: {{category.id}}"
+                title="{{category.name}}"
+                class="category-item {{category.id == active_category_id ? 'active' : 'inactive'}}"
+            >
+                <span>
+                    {{category.name}}
+                </span>
+            </a>
+        {% endfor %}
+    </div>
+    <div id="categoryProrgamsList">
+        {% partial '@programs-partial' %}
+    </div>
+</div>
+<!-- END Categories -->
+

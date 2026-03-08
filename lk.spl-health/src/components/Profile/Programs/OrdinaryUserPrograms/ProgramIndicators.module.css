@@ -1,0 +1,11 @@
+.indicators {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-l);
+  width: 100%;
+}
+
+.button-back {
+  align-self: flex-start;
+}

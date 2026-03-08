@@ -1,0 +1,43 @@
+.progrmas-content {
+  display: grid;
+  grid-template-columns: minmax(200px, 300px) 1fr;
+  gap: calc(var(--space-2xl) * 2);
+}
+
+.categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.categories-list__item-link_active {
+  color: var(--color-title);
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.programs-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+.program-card {
+  background-color: var(--bg-color-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.program-card__name {
+  color: var(--color-title);
+  font-size: var(--font-xl);
+  font-weight: 600;
+  align-self: flex-start;
+}
+.program-card__lessons {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--font-xs);
+}

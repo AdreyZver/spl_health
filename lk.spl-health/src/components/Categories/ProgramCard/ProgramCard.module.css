@@ -1,0 +1,9 @@
+.program__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #FFFFFF;
+}
+.program__card:hover {
+  cursor: pointer;
+}

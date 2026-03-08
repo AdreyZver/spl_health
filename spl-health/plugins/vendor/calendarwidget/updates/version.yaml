@@ -1,0 +1,19 @@
+1.0.1:
+    - 'Создание таблицы заметок'
+    - create_notes_table.php
+
+1.0.2:
+    - 'В таблицу добавлены поля programId и lessonId'
+    - create_notes_table.php
+
+1.0.3:
+    - 'Исправлена валидация'
+    - create_notes_table.php
+
+1.0.4:
+    - 'Исправлена БД'
+    - create_notes_table.php
+
+1.0.5:
+    - 'Исправлена БД'
+    - create_notes_table.php

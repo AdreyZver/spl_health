@@ -1,0 +1,19 @@
+.program__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+.program__context-button {
+  position: absolute;
+  top: var(--space-l);
+  right: var(--space-l);
+}
+
+.program__name {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}

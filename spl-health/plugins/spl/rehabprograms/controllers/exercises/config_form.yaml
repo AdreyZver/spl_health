@@ -1,0 +1,61 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Exercise
+
+# Model Form Field configuration
+form: $/spl/rehabprograms/models/exercise/fields.yaml
+
+# Model Class name
+modelClass: Spl\Rehabprograms\Models\Exercise
+
+# Default redirect location
+defaultRedirect: spl/rehabprograms/exercises
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: spl/rehabprograms/exercises/update/:id
+    redirectClose: spl/rehabprograms/exercises
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: spl/rehabprograms/exercises
+    redirectClose: spl/rehabprograms/exercises
+    form:
+        fields:
+            programs_id:
+                label: Программа
+                type: dropdown
+                placeholder: -- Выберете программу --
+                showSearch: false
+            lessons_id:
+                label: Программа
+                type: dropdown
+                placeholder: -- Выберете занятие --
+                showSearch: false
+                dependsOn: programs_id
+            name:
+                label: Название упражнения
+            initial_position:
+                label: Исходное положение
+            position_in_lesson:
+                label: Порядковый номер в занятии
+                type: dropdown
+                options: positionsInLessonOnUpdate
+                dependsOn: lessons_id
+            tempo:
+                label: Темп
+            duration:
+                label: Продолжительность
+            exercise_description:
+                label: Описание упражнения
+            video_url:
+                label: Ссылка на выдео
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  background-color: #FFFFFF;
+}
+
+.title {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-l);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-l);
+}
+
+.collapse_label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}

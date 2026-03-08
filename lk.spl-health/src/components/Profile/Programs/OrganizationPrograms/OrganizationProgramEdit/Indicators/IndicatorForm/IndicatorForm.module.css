@@ -1,0 +1,38 @@
+.indicator {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-s);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--control-radius);
+}
+
+.draggable-indicator-icon {
+  cursor: move;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-m);
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.action-remove {
+  cursor: pointer;
+}
+
+.checkbox {
+  margin-left: 3px;
+}

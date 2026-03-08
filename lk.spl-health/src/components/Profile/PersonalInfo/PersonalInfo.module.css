@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2xl);
+  background-color: #FFFFFF;
+}
+
+.title {
+  align-self: center;
+}
+
+.block_logo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.file_preview {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+}
+
+.logo_wrapper {
+  height: 150px;
+}
+
+.logo {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.submit_button {
+  align-self: flex-end;
+}
+
+.select {
+  max-width: 272px;
+}

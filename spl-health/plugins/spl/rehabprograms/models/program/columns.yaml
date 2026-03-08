@@ -1,0 +1,21 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: ID
+        searchable: true
+    category_id:
+        label: Категория
+        searchable: true
+        relation: category
+        select: name
+    name:
+        label: Название
+        searchable: true
+    is_published:
+        label: Опубликована
+        type: switch
+        on: spl.rehabprograms::lang.models.program.is_published.on
+        off: spl.rehabprograms::lang.models.program.is_published.off

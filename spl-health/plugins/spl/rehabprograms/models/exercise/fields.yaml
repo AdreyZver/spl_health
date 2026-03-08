@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    programs_id:
+        label: Программа
+        type: dropdown
+        placeholder: -- Выберете программу --
+        showSearch: false
+    lessons_id:
+        label: Занятие
+        type: dropdown
+        placeholder: -- Выберете занятие --
+        showSearch: false
+        dependsOn: programs_id
+    name:
+        label: Название упражнения
+    initial_position:
+        label: Исходное положение
+    position_in_lesson:
+        label: Порядковый номер в занятии
+        type: dropdown
+        dependsOn: lessons_id
+    tempo:
+        label: Темп
+    duration:
+        label: Продолжительность
+    exercise_description:
+        label: Описание упражнения
+    video_url:
+        label: Ссылка на выдео

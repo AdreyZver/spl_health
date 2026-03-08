@@ -1,0 +1,6 @@
+[19-Apr-2025 08:38:13 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'zip' (tried: ext\zip (Не найден указанный модуль), ext\php_zip.dll (Не найден указанный модуль)) in Unknown on line 0
+[19-Apr-2025 08:38:14 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'iconv' (tried: ext\iconv (Не найден указанный модуль), ext\php_iconv.dll (Не найден указанный модуль)) in Unknown on line 0
+[19-Apr-2025 08:38:14 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_proc_open.dll' (tried: ext\php_proc_open.dll (Не найден указанный модуль), ext\php_php_proc_open.dll.dll (Не найден указанный модуль)) in Unknown on line 0
+[18-May-2025 12:32:42 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'zip' (tried: ext\zip (Не найден указанный модуль), ext\php_zip.dll (Не найден указанный модуль)) in Unknown on line 0
+[18-May-2025 12:32:42 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'iconv' (tried: ext\iconv (Не найден указанный модуль), ext\php_iconv.dll (Не найден указанный модуль)) in Unknown on line 0
+[18-May-2025 12:32:42 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_proc_open.dll' (tried: ext\php_proc_open.dll (Не найден указанный модуль), ext\php_php_proc_open.dll.dll (Не найден указанный модуль)) in Unknown on line 0

@@ -1,0 +1,25 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    programs_id:
+        label: Программа
+        searchable: true
+        relation: programs
+        select: name
+    lessons_id:
+        label: Занятие
+        searchable: true
+        relation: lessons
+        select: name
+    name:
+        label: Название
+        searchable: true
+    exercise_description:
+        label: Описание
+    position_in_lesson:
+        label: Позиция в занятие
+        searchable: true
+        toolbar:
+            buttons: reorder_toolbar

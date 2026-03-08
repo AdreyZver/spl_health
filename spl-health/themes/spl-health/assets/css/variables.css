@@ -1,0 +1,25 @@
+:root {
+
+  /* Background */
+  --bg-color-primary: #FFFFFF;
+  --bg-color-secondary: #D8EEFE;
+
+  /* Font */
+  --color-primary: #5F6C7B;
+  --color-title: #094067;
+
+  --font-xs: 14px;
+  --font-sm: 16px;
+  --font-md: 18px;
+  --font-lg: 22px;
+  --font-xl: 24px;
+  --font-title: calc(var(--font-xl) * 2);
+
+  --space-xs: 5px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-xl: 40px;
+  --space-2xl: 80px;
+
+}

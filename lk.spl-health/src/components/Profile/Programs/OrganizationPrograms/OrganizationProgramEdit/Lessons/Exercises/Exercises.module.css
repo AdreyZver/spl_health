@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.button-submit {
+  align-self: flex-end;
+}
+
+.exercises-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.text-add {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  cursor: pointer;
+  align-self: flex-start;
+}

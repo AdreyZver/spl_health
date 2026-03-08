@@ -1,0 +1,12 @@
+.exercise__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #FFFFFF;
+}
+.exercise__name {
+  align-self: center;
+}
+.video_button {
+  align-self: flex-start;
+}

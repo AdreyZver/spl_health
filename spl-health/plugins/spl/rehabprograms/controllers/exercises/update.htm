@@ -1,0 +1,56 @@
+<?php Block::put('breadcrumb') ?>
+    <ul>
+        <li><a href="<?= Backend::url('spl/rehabprograms/exercises') ?>">Упражнения</a></li>
+        <li><?= e($this->pageTitle) ?></li>
+    </ul>
+<?php Block::endPut() ?>
+
+<?php if (!$this->fatalError): ?>
+
+    <?= Form::open(['class' => 'layout']) ?>
+
+        <div class="layout-row">
+            <?= $this->formRender() ?>
+        </div>
+
+        <div class="form-buttons">
+            <div class="loading-indicator-container">
+                <button
+                    type="submit"
+                    data-request="onSave"
+                    data-request-data="redirect:0"
+                    data-hotkey="ctrl+s, cmd+s"
+                    data-load-indicator="Saving Exercise..."
+                    class="btn btn-primary">
+                    <u>С</u>охранить
+                </button>
+                <button
+                    type="button"
+                    data-request="onSave"
+                    data-request-data="close:1"
+                    data-hotkey="ctrl+enter, cmd+enter"
+                    data-load-indicator="Saving Exercise..."
+                    class="btn btn-default">
+                    Сохранить и Закрыть
+                </button>
+                <button
+                    type="button"
+                    class="oc-icon-trash-o btn-icon danger pull-right"
+                    data-request="onDelete"
+                    data-load-indicator="Deleting Exercise..."
+                    data-request-confirm="Delete this exercise?">
+                </button>
+                <span class="btn-text">
+                    или <a href="<?= Backend::url('spl/rehabprograms/exercises') ?>">Выйти</a>
+                </span>
+            </div>
+        </div>
+
+    <?= Form::close() ?>
+
+<?php else: ?>
+
+    <p class="flash-message static error"><?= e($this->fatalError) ?></p>
+    <p><a href="<?= Backend::url('spl/rehabprograms/exercises') ?>" class="btn btn-default">Вернуться к списку упражнений</a></p>
+
+<?php endif ?>

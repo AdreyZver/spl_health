@@ -1,0 +1,29 @@
+.information {
+  padding: var(--space-2xl) 0;
+}
+.advantages {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+}
+.advantages__title {
+  margin-bottom: var(--space-2xl);
+}
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  width: 245px;
+}
+.advantages__item-text {
+  text-align: center;
+  font-size: var(--font-xl);
+}
+
+.partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2xl) 0;
+}

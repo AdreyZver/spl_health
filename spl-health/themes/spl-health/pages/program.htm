@@ -1,0 +1,13 @@
+title = "Программы реабилитации"
+url = "/program/:program_id"
+layout = "default"
+is_hidden = 0
+
+[programs]
+programId = "{{:program_id}}"
+==
+<section class="wrapper">
+    <div class="container">
+        {% component 'programs' %}
+    </div>
+</section>

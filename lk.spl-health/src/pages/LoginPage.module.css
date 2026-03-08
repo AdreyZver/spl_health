@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #D8EEFE;
+  height: 100vh;
+  width: 100vw;
+}
+.card {
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  background-color: #FFFFFF;
+}
+.link {
+  color: #0078D2;
+  text-decoration: underline;
+}
+.link:hover {
+  cursor: pointer;
+}

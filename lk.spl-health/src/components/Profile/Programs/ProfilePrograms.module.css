@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header.only-title {
+  align-items: center;
+}
+
+.programs__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  background-color: #FFFFFF;
+}
+
+.title {
+  align-self: center;
+}
+
+.program-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.program-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: var(--space-l)
+}
+
+.button__continue {
+  align-self: flex-end;
+}
+
+.filters {
+  min-width: 200px;
+  align-self: flex-start;
+}

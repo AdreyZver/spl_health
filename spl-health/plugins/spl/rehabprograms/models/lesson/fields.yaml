@@ -1,0 +1,20 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    programs_id:
+        label: Программа
+        type: dropdown
+        placeholder: -- Выберете программу --
+        showSearch: false
+    name:
+        label: Название занятия
+    position_in_program:
+        label: Порядковый номер в программе
+        type: dropdown
+        placeholder: -- Порядковый номер в программе --
+        dependsOn: programs_id
+    description:
+        label: Описание
+        type: richeditor

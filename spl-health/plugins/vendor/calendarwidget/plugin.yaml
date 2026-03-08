@@ -1,0 +1,6 @@
+plugin:
+    name: 'Calendar Widget'
+    description: 'Календарь с заметками'
+    author: 'Your Vendor'
+    icon: icon-calendar
+    homepage: ''

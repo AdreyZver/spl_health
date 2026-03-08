@@ -1,0 +1,26 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.footer {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  gap: var(--space-m);
+}
+
+.indicators-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.text-add {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  cursor: pointer;
+  align-self: flex-start;
+}

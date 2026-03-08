@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Modal {
+  z-index: 2;
+}
+.Popover {
+  z-index: 2;
+}

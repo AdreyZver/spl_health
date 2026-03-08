@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Program
+
+# Model Form Field configuration
+form: $/spl/rehabprograms/models/program/fields.yaml
+
+# Model Class name
+modelClass: Spl\Rehabprograms\Models\Program
+
+# Default redirect location
+defaultRedirect: spl/rehabprograms/programs
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: spl/rehabprograms/programs/update/:id
+    redirectClose: spl/rehabprograms/programs
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: spl/rehabprograms/programs
+    redirectClose: spl/rehabprograms/programs
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

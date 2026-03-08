@@ -1,0 +1,48 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Lesson
+
+# Model Form Field configuration
+form: $/spl/rehabprograms/models/lesson/fields.yaml
+
+# Model Class name
+modelClass: Spl\Rehabprograms\Models\Lesson
+
+# Default redirect location
+defaultRedirect: spl/rehabprograms/lessons
+
+# Create page
+create:
+    title: Добавить занятие
+    redirect: spl/rehabprograms/lessons/update/:id
+    redirectClose: spl/rehabprograms/lessons
+
+# Update page
+update:
+    title: Обновить занятие
+    redirect: spl/rehabprograms/lessons
+    redirectClose: spl/rehabprograms/lessons
+    form:
+        fields:
+            programs_id:
+                label: Программа
+                type: dropdown
+                placeholder: -- Выберете программу --
+                showSearch: false
+            name:
+                label: Название занятия
+            position_in_program:
+                label: Порядковый номер в программе
+                type: dropdown
+                placeholder: -- Порядковый номер в программе --
+                options: positionsInProgramsOnUpdate
+            description:
+                label: Описание
+                type: richeditor
+
+# Preview page
+preview:
+    title: Просмотреть занятие

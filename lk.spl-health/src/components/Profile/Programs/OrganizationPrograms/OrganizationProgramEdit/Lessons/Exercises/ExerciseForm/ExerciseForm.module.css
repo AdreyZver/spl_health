@@ -1,0 +1,35 @@
+.exercise {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  padding: var(--space-s);
+  background-color: var(--color-bg-soft);
+  border-radius: var(--control-radius);
+}
+
+.draggable-exercise-icon {
+  cursor: move;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-m);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+}
+
+.action-remove {
+  cursor: pointer;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}

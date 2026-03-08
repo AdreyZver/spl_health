@@ -1,0 +1,47 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    is_published:
+        label: Опубликована
+        type: switch
+        comment: Опубликованная программа отображается в общем списке программ
+        on: spl.rehabprograms::lang.models.program.is_published.on
+        off: spl.rehabprograms::lang.models.program.is_published.off
+    category_id:
+        label: Категория реабилитации
+        type: dropdown
+        placeholder: -- Выберете категорию --
+        showSearch: false
+    name:
+        label: Название
+    description:
+        label: Описание
+        type: richeditor
+    indicators:
+        type: repeater
+        titleFrom: Показатели здоровья
+        prompt: Добавить показатель
+        form:
+            fields:
+                name:
+                    label: Свойство name для индикатора
+                    comment: Используется внутри системы (не отображается пользователю)
+                    type: text
+                    required: true
+                label:
+                    label: Лейбл показателя
+                    comment: Название поля на форме заполнения (отображается пользователю)
+                    type: text
+                    required: true
+                is_required:
+                    label: Обязательное
+                    type: checkbox
+                type:
+                    label: Тип поля
+                    type: dropdown
+                    default: text
+                    options:
+                        text: Текстовое
+                        number: Числовое

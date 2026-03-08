@@ -1,0 +1,8 @@
+.programs__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.programs__list_program {
+  grid-template-columns: 1fr;
+}

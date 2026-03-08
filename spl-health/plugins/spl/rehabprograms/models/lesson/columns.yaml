@@ -1,0 +1,18 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    programs_id:
+        label: Программа
+        searchable: true
+        relation: programs
+        select: name
+    name:
+        label: Название
+        searchable: true
+    position_in_program:
+        label: Позиция в программе
+        searchable: true
+        toolbar:
+            buttons: reorder_toolbar

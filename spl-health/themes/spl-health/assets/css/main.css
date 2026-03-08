@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: var(--font-md);
+  line-height: 150%;
+  color: var(--color-primary);
+
+  background-color: var(--bg-color-primary);
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+  margin-top: 125px;
+}
+
+section {
+  padding: var(--space-xl) 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-size: var(--font-title);
+  color: var(--color-title);
+  margin: 0 0 var(--space-xl) 0;
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+  position: relative;
+  color: var(--color-primary);
+}
+a:hover {
+  cursor: pointer;
+}
+a:hover,
+a:focus-visible {
+  outline: none;
+}
+a::before {
+  content: '';
+  position: absolute;
+  display: block;
+  opacity: 0;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  transition: all 0.2s ease;
+  height: 2px;
+  background-color: var(--color-primary);
+}
+a:hover::before,
+a:focus::before {
+  opacity: 1;
+  transform: translateY(-8px);
+}
+a.active {
+    pointer-events: none;
+}
+a.active::before {
+  opacity: 1;
+  transform: translateY(-8px);
+}
+
+p {
+  padding: 0;
+  margin: 0 0 var(--space-xl);
+}

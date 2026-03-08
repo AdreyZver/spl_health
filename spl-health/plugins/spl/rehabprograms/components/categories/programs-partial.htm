@@ -1,0 +1,19 @@
+
+<!-- Programs -->
+<ul class="programs__list">
+    {% for program in programs %}
+        <li class="programs__list-item">
+            <div class="program__title">
+                Программа тренировок
+            </div>
+            <a href="/program/{{program.id}}" title="{{program.name}}" class="program__name">
+                {{program.name}}
+            </a>
+            <div class="program__title">
+                Занятий: {{program.lessons_count}}
+            </div>
+        </li>
+    {% endfor %}
+</ul>
+<!-- END Programs -->
+

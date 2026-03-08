@@ -1,0 +1,98 @@
+1.0.0:
+    - First version of rehabprograms
+    - Run tables migrations
+    - create_categories_table.php
+    - create_programs_table.php
+    - create_lessons_table.php
+    - create_exercises_table.php
+
+1.0.1:
+    - Migration fix
+    - Run tables migrations
+    - create_categories_table.php
+
+1.0.2:
+    - Migration fix
+    - Updates Programs table
+    - v1.0.2\update_programs_table.php
+
+1.0.3:
+    - Migration fix
+    - Run tables migrations
+    - v1.0.3\update_lessons_table.php
+
+1.0.3.1:
+    - Migration fix
+    - Run tables migrations
+    - v1.0.3\update_exercises_table.php
+
+1.0.5:
+    - User's Programs information
+    - Run tables migrations
+    - v1.0.5\create_user_program_table.php
+    - v1.0.5\create_completed_lessons.php
+
+1.0.6:
+    - User's lesson indicators
+    - Run tables migrations
+    - v1.0.6\create_lesson_indicators_table.php
+
+1.0.6.1:
+    - User's lesson indicators
+    - Run tables migrations
+    - v1.0.6\update_lesson_indicators_table.php
+
+1.0.7:
+    - Create indicators to program
+    - Run tables migrations
+    - v1.0.7\update_programs_table.php
+
+1.0.8:
+    - Create user_id_creator to program
+    - Run tables migrations
+    - v1.0.8\update_programs_table.php
+
+1.0.9:
+    - Update programs desctiption default value to NULL
+    - Run tables migrations
+    - v1.0.9\update_programs_table.php
+
+1.0.10:
+    - Rollback programs desctiption default value from NULL to NONE, Update programs indicators default value to NULL
+    - Run tables migrations
+    - v1.0.10\update_programs_table.php
+
+1.0.11:
+    - Rollback programs desctiption default value from NULL to NONE
+    - Run tables migrations
+    - v1.0.11\update_programs_table.php
+
+1.0.15:
+    - Add soft deletes to tables
+    - Run tables migrations
+    - v1.0.15\add_soft_deletes.php
+
+1.0.16:
+    - Add is_published flag to programs
+    - Run tables migrations
+    - v1.0.16\update_programs_table.php
+
+1.0.17:
+    - Create personal data tables
+    - Run tables migrations
+    - v1.0.17\create_personal_data_tables.php
+
+1.0.18:
+    - Add phone to organization info
+    - Run tables migrations
+    - v1.0.18\update_organization_info_table.php
+
+1.0.19:
+    - Add address to organization info
+    - Run tables migrations
+    - v1.0.19\update_organization_info_table.php
+
+1.0.20:
+    - Drop logo column
+    - Run tables migrations
+    - v1.0.20\update_organization_info_table.php

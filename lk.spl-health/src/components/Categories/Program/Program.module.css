@@ -1,0 +1,16 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.button_back {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.button_back:hover {
+  cursor: pointer;
+}
+.button_start {
+  align-self: center;
+}
